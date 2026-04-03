@@ -1,4 +1,4 @@
-html{
+﻿html{
     scroll-behavior: smooth;
 }
 
@@ -8,23 +8,21 @@ body {
 }
 
 .icon-color{
-    background: url(../img/list.png)
+    background: url(../img/menu-list.png)
 }
 
-.nav-titulo::before{
+.nav-title::before{
     content: "<";
     color: #0bbbed;
-
 }
 
-.nav-titulo{
+.nav-title{
     color: #ffffff;
 }
 
-.nav-titulo::after{
+.nav-title::after{
     content: "/>";
     color: #0bbbed;
-
 }
 
 .my-navbar{
@@ -41,28 +39,49 @@ body {
     color: rgb(143, 143, 143);
 }
 
+.language-dropdown .dropdown-menu {
+    min-width: 140px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(11, 187, 237, 0.35);
+}
+
+.language-dropdown .dropdown-item {
+    color: #ffffff;
+}
+
+.language-dropdown .dropdown-item:hover,
+.language-dropdown .dropdown-item:focus {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.language-dropdown .dropdown-item.active {
+    background-color: #0bbbed;
+    color: #ffffff;
+}
+
 section[id]{
  scroll-margin-top: 70px;  
 }
 
-.section-fondo1 {
+.section-bg-light {
     padding: 100px 0;
     background: white;
 }
 
-.section-fondo2 {
+.section-bg-muted {
     padding: 100px 0;
     background: rgb(240, 240, 240);
 }
 
-.foto-perfil{
+.profile-photo{
     height: 35vh;
     margin-right: 40px;
     margin-top: 40px;
     transition: filter  3s;
 }
 
-.inicio {
+.home {
     min-height: 100vh;
     display: flex;
     padding: 30px;
@@ -72,10 +91,9 @@ section[id]{
     position: relative;
 }
 
-.inicio-fondo {
-
+.home-background {
     background-color: black;
-    background-image: url("../img/fondo-codigo.jpg");
+    background-image: url("../img/code-background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -86,32 +104,35 @@ section[id]{
     filter: blur(2px);
 }
 
-.inicio-titulo-nombre {
-    font-size: 6.5vh;
+.home-title-name {
+    font-size: 4vh;
     text-shadow: 2px 2px black;
     color: #0bbbed;
-
 }
 
-.inicio-titulo {
-    font-size: 5vh;
+.home-title {
+    font-size: 4vh;
     color: #f5f5f5;
     text-shadow: 2px 2px black;
-
 }
 
-.descripcion{
+.typed-cursor {
+    color: #0bbbed;
+    font-size: 4vh;
+}
+
+.description{
     text-align: center;
 }
 
-.icono-github::after{
+.icon-github::after{
     
-    content: url(../img/logos/github.svg);
+    content: url(../img/icons/github.svg);
 }
 
-.icono-tierra::after{
+.icon-globe::after{
     
-    content: url(../img/logos/tierra.svg);
+    content: url(../img/icons/globe.svg);
 }
 
 footer {
@@ -124,3 +145,5 @@ footer a{
     color: white;
     text-decoration: none;
 }
+
+

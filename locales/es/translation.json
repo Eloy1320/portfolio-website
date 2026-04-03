@@ -1,0 +1,58 @@
+﻿{
+    "nav":  {
+                "home":  "Inicio",
+                "about":  "Sobre mi",
+                "skills":  "Habilidades",
+                "projects":  "Proyectos",
+                "contact":  "Contáctame",
+                "language":  "Idioma"
+            },
+    "hero":  {
+                 "greeting":  "Hola!",
+                 "name":  "Soy Eloy Díaz Del Castillo",
+                 "roles":  [
+                               "Desarrollador de Software",
+                               "Analista Desarrollador",
+                               "Ingeniero de Software"
+                           ]
+             },
+    "about":  {
+                  "title":  "Sobre mi",
+                  "description":  "Desarrollador de software con experiencia en el desarrollo de aplicaciones web y soluciones personalizadas. He trabajado con tecnologías como Angular, Ionic, Typescript, Laravel, PHP y Visual Basic, diseñando interfaces, creando soluciones de integración y participando en todas las fases del ciclo de vida del software utilizando metodologías ágiles como Scrum.",
+                  "viewCv":  "Ver CV"
+              },
+    "skills":  {
+                   "title":  "Habilidades"
+               },
+    "projects":  {
+                     "title":  "Proyectos",
+                     "website":  "Página web",
+                     "github":  "GitHub",
+                     "pokedex":  {
+                                     "tech":  "Tecnologías: ANGULAR, PRIMENG, PRIMEFLEX"
+                                 },
+                     "passwordGenerator":  {
+                                               "title":  "Generador de contraseñas",
+                                               "tech":  "Tecnologías: JS, BOOTSTRAP"
+                                           },
+                     "shoppingCart":  {
+                                          "title":  "Carrito de compra",
+                                          "tech":  "Tecnologías: JS, BOOTSTRAP"
+                                      }
+                 },
+    "contact":  {
+                    "title":  "Contáctame",
+                    "emailLabel":  "Correo electrónico",
+                    "emailPlaceholder":  "Tu correo: ejemplo@gmail.com",
+                    "messageLabel":  "Mensaje",
+                    "messagePlaceholder":  "Escribe tu mensaje",
+                    "submit":  "Enviar mensaje"
+                },
+    "footer":  {
+                   "rights":  "Todos los derechos reservados"
+               },
+    "thanks":  {
+                   "messageSent":  "Mensaje enviado",
+                   "thankYou":  "¡Gracias!"
+               }
+}

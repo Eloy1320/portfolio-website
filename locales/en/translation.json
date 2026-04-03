@@ -1,0 +1,58 @@
+﻿{
+    "nav":  {
+                "home":  "Home",
+                "about":  "About me",
+                "skills":  "Skills",
+                "projects":  "Projects",
+                "contact":  "Contact",
+                "language":  "Language"
+            },
+    "hero":  {
+                 "greeting":  "Hello!",
+                 "name":  "I am Eloy Díaz Del Castillo",
+                 "roles":  [
+                               "Software Developer",
+                               "Developer Analyst",
+                               "Software Engineer"
+                           ]
+             },
+    "about":  {
+                  "title":  "About me",
+                  "description":  "Software developer with experience building web applications and custom solutions. I have worked with technologies such as Angular, Ionic, TypeScript, Laravel, PHP, and Visual Basic, designing interfaces, creating integration solutions, and participating in all phases of the software lifecycle using agile methodologies like Scrum.",
+                  "viewCv":  "View CV"
+              },
+    "skills":  {
+                   "title":  "Skills"
+               },
+    "projects":  {
+                     "title":  "Projects",
+                     "website":  "Website",
+                     "github":  "GitHub",
+                     "pokedex":  {
+                                     "tech":  "Technologies: ANGULAR, PRIMENG, PRIMEFLEX"
+                                 },
+                     "passwordGenerator":  {
+                                               "title":  "Password Generator",
+                                               "tech":  "Technologies: JS, BOOTSTRAP"
+                                           },
+                     "shoppingCart":  {
+                                          "title":  "Shopping Cart",
+                                          "tech":  "Technologies: JS, BOOTSTRAP"
+                                      }
+                 },
+    "contact":  {
+                    "title":  "Contact me",
+                    "emailLabel":  "Email",
+                    "emailPlaceholder":  "Your email: example@gmail.com",
+                    "messageLabel":  "Message",
+                    "messagePlaceholder":  "Write your message",
+                    "submit":  "Send message"
+                },
+    "footer":  {
+                   "rights":  "All Rights Reserved"
+               },
+    "thanks":  {
+                   "messageSent":  "Message sent",
+                   "thankYou":  "Thank you!"
+               }
+}

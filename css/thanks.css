@@ -1,0 +1,11 @@
+html,
+body,
+.container-fluid {
+  height: 100%;
+  border: 3px solid #0bbbed;
+}
+
+.thanks{
+margin-top: 40vh;
+
+}

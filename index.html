@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,10 +8,10 @@
 
 
   <!-- Bootstrap CSS -->
-  <link rel="icon" href="img/logos/favicon.ico">
+  <link rel="icon" href="img/icons/favicon.ico">
   <link rel="stylesheet" href="lib/bootstrap-5.0.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/efecto-hover.css">
+  <link rel="stylesheet" href="css/hover-effect.css">
 
   <title>Eloy Dev</title>
 
@@ -19,10 +19,10 @@
 
 <body>
 
-  <!-- BARRA NAVEGACIÓN -->
+  <!-- NAVIGATION BAR -->
   <nav class="navbar fixed-top navbar-expand-md  my-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand nav-titulo" href="#inicio">Eloy Dev</a>
+      <a class="navbar-brand nav-title" href="#home">Eloy Dev</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon icon-color"></span>
@@ -30,19 +30,26 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a>
+            <a class="nav-link js-scroll-trigger" href="#home" data-i18n="nav.home"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+            <a class="nav-link" href="#about-me" data-i18n="nav.about"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#habilidades">Habilidades</a>
+            <a class="nav-link" href="#skills" data-i18n="nav.skills"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="#projects" data-i18n="nav.projects"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contáctame</a>
+            <a class="nav-link" href="#contact" data-i18n="nav.contact"></a>
+          </li>
+          <li class="nav-item dropdown language-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.language"></a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><button class="dropdown-item active" type="button" data-change-language="es">Español</button></li>
+              <li><button class="dropdown-item" type="button" data-change-language="en">English</button></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -50,50 +57,39 @@
   </nav>
 
 
-  <section class="inicio section-fondo1" id="inicio">
-    <div class="inicio-fondo"></div>
+  <section class="home section-bg-light" id="home">
+    <div class="home-background"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-          <img src="img/ilu.svg" class="img-fluid d-block mx-auto foto-perfil" alt="Codificando">
+          <img src="img/ilu.svg" class="img-fluid d-block mx-auto profile-photo">
         </div>
 
-        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-          <div class="descripcion">
-            <span class="inicio-titulo"><br>Hola!<br></span>
-            <span class="inicio-titulo-nombre">Soy Eloy Díaz Del Castillo<br><span>
-                <span class="inicio-titulo typed"></span>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 d-flex align-items-center justify-content-center">
+          <div class="description">
+            <span class="home-title" data-i18n="hero.greeting"></span><br>
+            <span class="home-title-name" data-i18n="hero.name"></span><br>
+            <span class="home-title typed"></span>
           </div>
         </div>
       </div>
     </div>
 
-
-
   </section>
 
-  <section class="sobre-mi section-fondo1" id="sobre-mi">
+  <section class="about-me section-bg-light" id="about-me">
 
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-          <h2 class="pb-4"><strong>Sobre mi</strong></h2>
-          <p>
-            Desarrollador de software con
-            experiencia en el desarrollo de
-            aplicaciones web y soluciones personalizadas.
-            He trabajado con tecnologías como Angular, Ionic,
-            Typescript, Laravel, PHP y Visual Basic, diseñando
-            interfaces, creando soluciones de integración y participando
-            en todas las fases del ciclo de vida del software utilizando
-            metodologías ágiles como Scrum.
-          </p>
+          <h2 class="pb-4"><strong data-i18n="about.title"></strong></h2>
+          <p data-i18n-html="about.description"></p>
           <a href="https://eloy1320.github.io/cv-eloydiaz/" target="_blank" class="btn btn-primary btn-lg mb-4"><img
-              src="img/icono-ojo.png" width="30px" height="30px"> Ver CV</a>
+              src="img/eye-icon.png" width="30px" height="30px"> <span data-i18n="about.viewCv"></span></a>
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-          <img src="img/ilu2.svg" class="img-fluid d-block mx-auto foto-perfil" alt="Sobre mi">
+          <img src="img/ilu2.svg" class="img-fluid d-block mx-auto profile-photo" alt="Sobre mi">
         </div>
       </div>
     </div>
@@ -101,11 +97,11 @@
 
   </section>
 
-  <section class="habilidades section-fondo2" id="habilidades">
+  <section class="skills section-bg-muted" id="skills">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2 class="text-center pb-4"><strong>Habilidades</strong></h2>
+          <h2 class="text-center pb-4"><strong data-i18n="skills.title"></strong></h2>
         </div>
       </div>
       <div class="row pb-4 mx-auto text-center">
@@ -202,30 +198,35 @@
           <p>C#</p>
         </div>
 
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+          <img width="100" height="100" src="img/icons/java-icon.svg">
+          <p>Java</p>
+        </div>
+
       </div>
 
     </div>
   </section>
 
-  <section class="proyectos section-fondo1" id="proyectos">
-    <h2 class="text-center pb-4"><strong>Proyectos</strong></h2>
+  <section class="projects section-bg-light" id="projects">
+    <h2 class="text-center pb-4"><strong data-i18n="projects.title"></strong></h2>
 
     <div class="container">
       <div class="row pb-5 mx-auto text-center">
 
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-5">
-          <div class="proyecto-item">
-            <img src="img/proyectos/poke-dexplorer.png" alt="poke-dexplorer">
-            <div class="proyecto-detalles">
+          <div class="project-item">
+            <img src="img/projects/poke-dexplorer.png" alt="poke-dexplorer">
+            <div class="project-details">
               <p><strong>PokeDexplorer</strong></p>
-              <p>Tecnologías: ANGULAR , PRIMENG, PRIMEFLEX</p>
+              <p data-i18n="projects.pokedex.tech"></p>
               <a class="btn btn-dark btn-sm" target="_blank" href="https://eloy1320.github.io/poke-dexplorer/">
-                <i class="icono-tierra"></i>
-                Pagina web
+                <i class="icon-globe"></i>
+                <span data-i18n="projects.website"></span>
               </a>
               <a class="btn btn-dark btn-sm" target="_blank" href="https://github.com/Eloy1320/poke-dexplorer">
-                <i class="icono-github"></i>
-                Github
+                <i class="icon-github"></i>
+                <span data-i18n="projects.github"></span>
               </a>
 
             </div>
@@ -233,18 +234,18 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-5">
-          <div class="proyecto-item">
-            <img src="img/proyectos/generador-contraseña.JPG" alt="generador de contraseña">
-            <div class="proyecto-detalles">
-              <p><strong>Generador de contraseñas</strong></p>
-              <p>Tecnologías: JS , BOOTSTRAP</p>
+          <div class="project-item">
+            <img src="img/projects/password-generator.jpg" alt="generador de contraseÃ±a">
+            <div class="project-details">
+              <p><strong data-i18n="projects.passwordGenerator.title"></strong></p>
+              <p data-i18n="projects.passwordGenerator.tech"></p>
               <a class="btn btn-dark btn-sm" target="_blank" href="https://eloy1320.github.io/generador-contra/">
-                <i class="icono-tierra"></i>
-                Pagina web
+                <i class="icon-globe"></i>
+                <span data-i18n="projects.website"></span>
               </a>
               <a class="btn btn-dark btn-sm" target="_blank" href="https://github.com/Eloy1320/generador-contra">
-                <i class="icono-github"></i>
-                Github
+                <i class="icon-github"></i>
+                <span data-i18n="projects.github"></span>
               </a>
 
             </div>
@@ -252,25 +253,25 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-5">
-          <div class="proyecto-item">
-            <img src="img/proyectos/Carrito de compras.PNG" alt="Carrito de compras">
-            <div class="proyecto-detalles">
-              <p><strong>Carrito de compra</strong></p>
-              <p>Tecnologías: JS , BOOTSTRAP</p>
+          <div class="project-item">
+            <img src="img/projects/shopping-cart.png" alt="Carrito de compras">
+            <div class="project-details">
+              <p><strong data-i18n="projects.shoppingCart.title"></strong></p>
+              <p data-i18n="projects.shoppingCart.tech"></p>
               <a class="btn btn-dark btn-sm" target="_blank" href="https://eloy1320.github.io/carritoCompra/">
-                <i class="icono-tierra"></i>
-                Pagina web
+                <i class="icon-globe"></i>
+                <span data-i18n="projects.website"></span>
               </a>
               <a class="btn btn-dark btn-sm" target="_blank" href="https://github.com/Eloy1320/carritoCompra">
-                <i class="icono-github"></i>
-                Github
+                <i class="icon-github"></i>
+                <span data-i18n="projects.github"></span>
               </a>
 
             </div>
           </div>
         </div>
         <!-- 
-        segunda fila
+        second row
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-5">
           dfffdfgdfgdfg
         </div>
@@ -287,31 +288,31 @@
     </div>
 
   </section>
-
-  <section class="contacto section-fondo2" id="contacto">
-    <h2 class="text-center pb-4"><strong>Contáctame</strong></h2>
+  
+  <section class="contact section-bg-muted" id="contact">
+    <h2 class="text-center pb-4"><strong data-i18n="contact.title"></strong></h2>
 
     <div class="container">
       <div class="row">
-        <form class="form" action="https://formsubmit.co/18f9ee90ebd6bdc038eaa249649b4a61 " method="post" id="form">
+        <form class="form" action="https://formsubmit.co/eloydiaz1320@gmail.com" method="post" id="form">
           <input type="hidden" name="_subject" value="Correo del Portafolio Web">
           <input type="hidden" name="_next"
-            value="https://eloy1320.github.io/Portafolio-Web-EloyDiaz/vistas/gracias.html">
+            value="https://eloy1320.github.io/portfolio-website/views/thanks.html">
           <div class="col-12">
 
-            <p><strong>Correo electrónico</strong></p>
+            <p><strong data-i18n="contact.emailLabel"></strong></p>
             <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Tu correo: ejemplo@gmail.com" name="email"
+              <input type="email" class="form-control" placeholder="" data-i18n-placeholder="contact.emailPlaceholder" name="email"
                 id="email" required>
             </div>
 
-            <p><strong>Mensaje</strong></p>
+            <p><strong data-i18n="contact.messageLabel"></strong></p>
             <div class="input-group mb-3">
-              <textarea class="form-control" cols="40" rows="5" name="message" id="message" required></textarea>
+              <textarea class="form-control" cols="40" rows="5" name="message" id="message" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
             </div>
 
             <div class="input-group mb-3 d-grid gap-2">
-              <input type="submit" class="btn btn-primary btn-lg" placeholder="ejemplo@gmail.com">
+              <input type="submit" class="btn btn-primary btn-lg" value="" data-i18n-value="contact.submit">
             </div>
 
         </form>
@@ -323,15 +324,19 @@
   <footer>
     <div class="footer-copyright text-center py-3">
       <p>© <span id="year"></span> Copyright:
-        <a href="#inicio"> Eloy Díaz Del Castillo</a></p>
-      <p>All Rights Reserved</p>
+        <a href="#home"> Eloy Díaz Del Castillo</a></p>
+      <p data-i18n="footer.rights"></p>
     </div>
   </footer>
 
   <script src="lib/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="js/animacion.js"></script>
+  <script src="js/animation.js"></script>
   <script src="js/navBar.js"></script>
+  <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@8.0.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="js/i18n.js"></script>
 
   <script>
     var yearSpan = document.getElementById("year");
@@ -342,3 +347,4 @@
 </body>
 
 </html>
+
